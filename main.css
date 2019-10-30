@@ -22,17 +22,30 @@ body, html {
     height: 100%;
 }
 
-.article, .aside {
+.vcenter {
     position: relative;
     top: 50%;
     transform: translateY(-50%)
 }
 
-.section.paragraph {
+.section-paragraph {
     font-size: 1em;
+    margin: 25px;
 }
 
 .footer{
     background-color: #4a4a4f;
     padding: 15px;
+}
+
+@media (min-width: 768px) {
+    .column{
+    float: left;
+    }
+    .column-60{
+        width: 60%;
+    }
+    .column-40{
+        width: 40%;
+    }
 }
